@@ -17,7 +17,7 @@ const Pages = () => {
         <Shop />
       ) : 
         name === "home" ? (
-        <home />
+        <Home />
       ) : (
         <DefaultLandingPage />
       )}

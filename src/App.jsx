@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import './index.css'
 
 const App = () => {
@@ -6,20 +6,14 @@ const App = () => {
     <div>
       <nav>
         <h1 className="shopName">Praguu</h1>
-        <ul className="nav-links">
-          <li>
-            {/* <Link to="profile">Profile page</Link> */}
-            Home
-          </li>
-          <li>
-            Shop
-          </li>
-          <li>
-            Cart
-          </li>
-        </ul>
+        <div className="nav-lk">
+          <Link to="/" className="nav-links">Home</Link> 
+          <Link to="/shop" className="nav-links">Shop</Link> 
+          <Link to="/cart" className="nav-links">Cart</Link>
+        </div>
       </nav>
-      {/* <hr/> */}
+      <hr/>
+      <Outlet />
     </div>
   );
 };

@@ -57,3 +57,19 @@
     color: #99744A;
     text-shadow: 4px 4px 5px rgba(31, 30, 30, 0.5);
 }
+
+.shop-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.shop-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+
+}
+
+.price-bar{
+    display: flex;
+}

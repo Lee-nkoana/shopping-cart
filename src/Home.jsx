@@ -1,28 +1,21 @@
-import { useParams } from "react-router-dom";
-import Shop from "./ShoppingPage";
-import Cart from "./Cart";
+import './styles.css'
 
-const Pages = () => {
-  const { name } = useParams();
-
+const Home = () => {
   return (
-    <div>
-      <h1>Hello from profile page!</h1>
-      <p>So, how are you?</p>
-      <hr />
-      <h2>The profile visited is here:</h2>
-      {name === "cart" ? (
-        <Cart />
-      ) : name === "shop" ? (
-        <Shop />
-      ) : 
-        name === "home" ? (
-        <Home />
-      ) : (
-        <DefaultLandingPage />
-      )}
+    <div className='home-box'>
+      <div className='home-main'>
+        <h1 className='site-title'>Praguu</h1>
+        <h2 className='site-slogan'>The <span className='txt-style'>Art</span> of Knowing</h2>
+      </div>
+      <div className='home-mb'>
+
+        <div className='gd-box'>Fashion</div>
+        <div className='gd-box'>Vision</div>
+        <div className='gd-box'>Creativity</div>
+      </div>
+      
     </div>
   );
 };
 
-export default Pages;
+export default Home;

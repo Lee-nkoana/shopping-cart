@@ -1,5 +1,36 @@
 import { Link } from "react-router";
 import './styles.css'
+import { useState, useEffect } from "react";
+
+function Input(props) {
+    return (
+        <input {...props} />
+    );
+}
+
+function Button({ text, ...props }){
+  return( 
+    <button {...props}>{text}</button>
+   );
+}
+
+// function IncreaseButton(){
+//   const get
+// }
+
+// function DecreaseButton(){
+
+// }
+
+function Cards(){
+  const [getItemData, setItemData] = useState([]);
+  const [getLoading,  setLoading] = useState([]);
+  const [amount, setAmount] = useState('');
+  const [isEditing, setIsEditing] = useState(true);
+  const [cart, setCare] = useState([]);
+
+
+}
 
 const Shop = () => {
   return (
@@ -9,11 +40,11 @@ const Shop = () => {
          <h3>item title</h3>
          <h4>item price</h4>
          <div className="price-bar">
-          <button>-</button>
-          <input type="number" />
-          <button>+</button>
+          <Button text={"-"} />
+          <input type="number" value/>
+          <Button text={"+"}/>
          </div>
-         <button>add to cart</button>
+         <Button text={"Add to Cart"}/>
       </div>
     </div>
   );

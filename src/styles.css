@@ -61,13 +61,20 @@
 .shop-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .shop-card{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    color: aliceblue;
+    padding: 10px 8px;
+    background-color: #C19C6F;
+}
 
+.product_img{
+    height: 100%;
+    width: 100%;
 }
 
 .price-bar{
